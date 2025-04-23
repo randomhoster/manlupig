@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms | Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/icon.jpg" alt="Resort Icon" width="50" height="50" class="me-2 rounded-circle"> 
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="room.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="cottage.html">Cottage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-warning ms-3" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservation</a>
+        </div>
+    </div>
+</nav>
+
+<body class="video-background-page "> 
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="images/7293846-hd_1920_1080_30fps.mp4" type="video/mp4"> 
+        </video>
+    </div>   
+
+    <section class="features-section py-5">
+        <div class="container">
+       
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <h3> Welcome to Twin Ei8ht Resort</h3>
+                  <p>Escape the noise and discover a hidden gem nestled in nature’s embrace — Twin Ei8ht Resort is your perfect getaway for relaxation, fun, and unforgettable memories. From our cozy cottages to our refreshing swimming pools, we offer a complete resort experience made for families, friends, and even solo travelers looking to unwind.
+              
+                    Every corner of the resort is designed with comfort and tranquility in mind, giving you space to breathe, laugh, and enjoy life. Whether you're here for a weekend staycation or a special celebration, Twin Ei8ht Resort welcomes you with open arms and a warm, peaceful atmosphere you'll always want to come back to.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <a href="about.html">
+                    <img src="images/icon.jpg" alt="Pool" class="img-fluid" style="max-width: 300px;">
+                  </a>
+                </div>
+              </div>      
+          <div class="row align-items-center flex-md-row-reverse mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h3> Catering Services Available</h3>
+              <p>At Twin Ei8ht Resort, we go beyond just providing a place to stay — we bring the flavor to your celebrations! Whether you're planning a birthday, reunion, corporate event, or a simple gathering with friends and family, our affordable and delicious catering services are ready to serve. Enjoy a variety of local and international dishes prepared fresh by our team, delivered with the same warmth and care you experience throughout the resort.</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="images/gallery6.jpg" alt="Cottage" class="img-fluid" style="max-width: 300px;">
+            </div>
+          </div> 
+          <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h3> About Us</h3>
+              <p>At Twin Ei8ht Resort, we believe that every guest deserves a relaxing escape and a memorable experience.</p>
+              <p>Founded with a passion for hospitality and nature, our resort was built to be more than just a destination — it’s a place where unforgettable memories are made. Whether you’re here for a weekend getaway, a family gathering, or a special celebration, our team is dedicated to making your stay truly exceptional.</p>
+
+              <p> We offer cozy and well-maintained rooms, spacious event areas, delicious catering services, and a peaceful environment surrounded by natural beauty. From sunrise views to starlit nights, every moment at [Pangalan ng Resort Mo] is made to be cherished.</p>
+              <p>Come as guests, leave as family.</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="images/backgroung3.jpg" alt="Function Hall" class="img-fluid" style="max-width: 300px;">
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reservationModalLabel">Reservation Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="thankyou1.html" method="get">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkin" class="form-label">Check-in Date</label>
+                            <input type="date" class="form-control" id="checkin" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkout" class="form-label">Check-out Date</label>
+                            <input type="date" class="form-control" id="checkout" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Number of Guests</label>
+                            <input type="number" class="form-control" id="guests" min="1" placeholder="Enter number of guests" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="requests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="requests" rows="3" placeholder="Enter any special requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

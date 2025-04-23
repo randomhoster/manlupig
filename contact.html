@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Premier Suite Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact-page"> 
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/icon.jpg" alt="Resort Icon" width="50" height="50" class="me-2 rounded-circle"> 
+            </a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="room.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cottage.html">Cottage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="contact.html">Contact</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-warning ms-3" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservation</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav> 
+    <div class="contact-form-container">
+        <div class="icon">
+            <i class="bi bi-envelope"></i>
+        </div>
+        <h3>For All Questions And Inquiries, Kindly Call Or Text The Resort Directly</h3>
+        <form>
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+
+            <label for="message">YOUR MESSAGE</label>
+            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reservationModalLabel">Reservation Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="thankyou1.html" method="get">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkin" class="form-label">Check-in Date</label>
+                            <input type="date" class="form-control" id="checkin" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkout" class="form-label">Check-out Date</label>
+                            <input type="date" class="form-control" id="checkout" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Number of Guests</label>
+                            <input type="number" class="form-control" id="guests" min="1" placeholder="Enter number of guests" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="requests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="requests" rows="3" placeholder="Enter any special requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+                    </form>
+                    <p class="mt-3 small text-muted">
+                        By booking, you agree to our <a href="terms.html">Terms & Conditions</a> and <a href="policy.html">Privacy Policy</a>.
+                    </p>                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

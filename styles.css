@@ -1,0 +1,329 @@
+ /* Hero Section */
+.hero-section {
+    background: url('images/backgroung2.jpg') no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeInDown 1.5s;
+}
+
+.hero-section p {
+    animation: fadeInUp 1.5s;
+}
+
+.hero-section button {
+    animation: fadeInUp 1.5s;
+    transition: transform 0.3s ease;
+}
+
+.hero-section button:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    animation: fadeInUp 1.5s;
+    transition: transform 0.3s ease;
+}
+
+.container p {
+    animation: fadeInUp 1.5s;
+}
+
+.container {
+    animation: fadeInUp 1.5s;
+    transition: transform 0.3s ease;
+}
+ 
+.booking-section {
+    background: #f8f9fa;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+ 
+.rooms-suites-section {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #f0ad4e;
+    margin: 0.5rem auto;
+}
+
+.rooms-suites-section .price {
+    font-size: 1.5rem;
+    color: #ff5722;
+}
+
+.rooms-suites-section .room-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rooms-suites-section .room-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+ 
+.room-card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.room-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.room-description {
+    color: #666;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.contact-page {
+    background: url('images/contact.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contact-form-container h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form-container .form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form-container .submit-btn {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contact-form-container .submit-btn:hover {
+    background-color: #c2551a;
+}
+
+.contact-form-container .icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: #d2691e;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.location-bg {
+    background: url('images/gallery24.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+ 
+.location-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: -1;
+} 
+ 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+ 
+.video-container {
+    position: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+}
+
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ 
+.features-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.features-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.features-section .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.features-section .card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.features-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.features-section .card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll-left 35s linear infinite;
+    font-size: 1rem;
+    min-width: 100%;
+    position: absolute;
+  }
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    .small-btn {
+        padding: 5px 10px; /* Adjust padding to make the button smaller */
+        font-size: 12px; /* Adjust font size */
+    }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
